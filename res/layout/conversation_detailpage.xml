@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/conversationdetail_swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000" >
+
+            <RelativeLayout
+                android:id="@+id/conversationdetail_nointernet_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="No intenet connection"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/conversationdetail_loading_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/conversationdetail_loading_gif"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/loadinganim4" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/conversationdetail_loading_gif"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/conversationdetail_preparing_dummytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data1"
+                        android:textColor="#4f4f4f" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/conversationdetail_preparing_dummytext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/conversationdetail_preparing_dummytext"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data2"
+                        android:textColor="#4f4f4f" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/conversationdetail_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="visible" >
+
+                <ListView
+                    android:id="@+id/conversationdetail_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#D6E2EE"
+                    android:divider="@null"
+                    android:scrollbars="none"
+                    android:stackFromBottom="true"
+                    android:paddingBottom="5dp"
+                    android:transcriptMode="alwaysScroll" >
+                </ListView>
+                
+                
+                <com.example.material_floatbutton_libraryprem.FloatingActionButton
+                    android:id="@+id/conversationdetail_fabbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/float_chat_icon"
+                    app:fab_colorNormal="#1A237E"
+                    app:fab_colorPressed="#4151e0"
+                    app:fab_colorRipple="#99FFFFFF"
+                    app:fab_elevationCompat="4dp"
+                    app:fab_shadowColor="#66000000"
+                    app:fab_showShadow="true" />
+                
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

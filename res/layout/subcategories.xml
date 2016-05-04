@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/subcategory_swipe_refresh_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ECECEC" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000" >
+
+            <RelativeLayout
+                android:id="@+id/subcategory_nointernet_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="No intenet connection"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/subcategory_loading_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/subcategories_loading_gif"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subcategories_loading_gif"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/subcategories_preparing_dummytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data1" 
+                        android:textColor="#4f4f4f"/>
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/subcategories_preparing_dummytext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subcategories_preparing_dummytext"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data2"
+                        android:textColor="#4f4f4f" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/subcategory_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:visibility="visible"
+                android:background="#F7F6F2" >
+
+                <com.shopsy.Utils.GridViewWithHeaderAndFooter
+                    android:id="@+id/subcategory_GridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#F7F6F2"
+                    android:gravity="center"
+                    android:numColumns="2"
+                    android:scrollbars="none" >
+                </com.shopsy.Utils.GridViewWithHeaderAndFooter>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.shopsy"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F6F2" >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F7F6F2"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7F6F2" >
+
+            <ImageView
+                android:id="@+id/picks_category_image"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/description"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/picks_category_image"
+                android:background="#ffffff" >
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/picks_category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="Women"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

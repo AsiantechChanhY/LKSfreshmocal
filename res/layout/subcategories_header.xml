@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1A237E" >
+
+    <Spinner
+        android:id="@+id/subcategories_header_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/subcategories_header_cartrelativelayout" />
+
+    <!-- <ImageView
+        android:id="@+id/subcategories_header_search"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/subcategories_header_cartrelativelayout"
+        android:contentDescription="@string/description"
+        android:scaleType="centerInside"
+        android:src="@drawable/searchnew" /> -->
+
+    <RelativeLayout
+        android:id="@+id/subcategories_header_cartrelativelayout"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/description" >
+
+        <ImageView
+            android:id="@+id/subcategories_header_cart"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="3dp"
+            android:contentDescription="@string/description"
+            android:src="@drawable/cartone" />
+
+        <ProgressBar
+            android:id="@+id/subcategories_header_cart_progressBar"
+            android:layout_width="22dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/subcategories_header_cart"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/subcategories_header_cartcountlayout"
+            android:layout_width="21dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/subcategories_header_cart"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/layout_bg"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/subcategories_header_cartcounttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:typeface="sans" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

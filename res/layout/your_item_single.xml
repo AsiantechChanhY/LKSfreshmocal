@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F6F2" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/your_item_single_productimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image_grey" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/your_item_single_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/your_item_single_productimage"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/your_item_single_productimage"
+            android:text="Bottle"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/your_item_single_instock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/your_item_single_productname"
+            android:layout_below="@+id/your_item_single_productname"
+            android:text=""
+            android:textColor="#4e4e4e"
+            android:textSize="14sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/your_item_single_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/your_item_single_instock"
+            android:layout_below="@+id/your_item_single_instock"
+            android:text="$200000"
+            android:textColor="#048A2C"
+            android:textSize="14sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignRight="@+id/your_item_single_productimage"
+            android:layout_below="@+id/your_item_single_productimage"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

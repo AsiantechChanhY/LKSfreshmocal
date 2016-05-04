@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+        <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_background_border" >
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="15dp" />
+      
+    
+    </RelativeLayout>
+
+    <!--  
+     <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:background="#000000"
+         android:layout_below="@+id/editText3" />-->
+
+   <!--   <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText2"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Message" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText1"
+        android:ems="10"
+        android:text="Subject" >
+      
+
+        <requestFocus />
+    </EditText>  -->
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background_border"
+        android:ems="10"
+        android:hint="subject"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#4f4f4f"
+        android:textColorHint="#4f4f4f"
+        android:textSize="14sp"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background_border"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#4f4f4f"
+        android:textColorHint="#4f4f4f"
+        android:textSize="14sp"
+        android:typeface="sans" />
+
+</RelativeLayout>

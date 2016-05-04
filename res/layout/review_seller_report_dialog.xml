@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/report_dialog_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/label_report_dialog_reviews"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editText_popup_desc_itemtitle_report"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/report_dialog_label"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_fouced_grey_new"
+            android:hint="@string/label_report_dialog_message"
+            android:maxLines="140"
+            android:padding="10dp"
+            android:textColor="#4e4e4e"
+            android:textColorHint="#4e4e4e"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="14sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/report_dialog_report_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editText_popup_desc_itemtitle_report"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_report_dialog_report"
+            android:textColor="#00695C"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_below="@+id/editText_popup_desc_itemtitle_report"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/report_dialog_label"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/report_dialog_progress_layout"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/editText_popup_desc_itemtitle_report"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/progressBar1"
+                android:text="@string/pleasewait"
+                android:textColor="#00695C"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

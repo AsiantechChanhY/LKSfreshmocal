@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FacebookSDK_Shopsy" />
+            <option value="$PROJECT_DIR$/Material_ContextMenu_Library" />
+            <option value="$PROJECT_DIR$/Material_Dialog_Library" />
+            <option value="$PROJECT_DIR$/Material_FloatButton_LibraryPrem" />
+            <option value="$PROJECT_DIR$/ViewPager_AutoSlider_Library" />
+            <option value="$PROJECT_DIR$/android-support-v7-CardView" />
+            <option value="$PROJECT_DIR$/android-support-v7-appcompat" />
+            <option value="$PROJECT_DIR$/google-play-services_lib" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FacebookSDK_Shopsy" />
+            <option value="$PROJECT_DIR$/Material_ContextMenu_Library" />
+            <option value="$PROJECT_DIR$/Material_Dialog_Library" />
+            <option value="$PROJECT_DIR$/Material_FloatButton_LibraryPrem" />
+            <option value="$PROJECT_DIR$/ViewPager_AutoSlider_Library" />
+            <option value="$PROJECT_DIR$/android-support-v7-CardView" />
+            <option value="$PROJECT_DIR$/android-support-v7-appcompat" />
+            <option value="$PROJECT_DIR$/google-play-services_lib" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

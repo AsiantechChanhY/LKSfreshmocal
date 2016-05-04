@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F6F2" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <com.shopsy.Utils.RoundedImageView
+            android:id="@+id/dispute_order_completed_userimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/nouserimg" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/dispute_order_completed_orderno_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dispute_order_completed_userimage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/dispute_order_completed_userimage"
+            android:text="@string/dispute_order_label_orderNo"
+            android:textColor="#4e4e4e"
+            android:textSize="15sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/dispute_order_completed_orderno_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dispute_order_completed_orderno_label"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/dispute_order_completed_orderno_label"
+            android:text=""
+            android:textColor="#A5A5A5"
+            android:textSize="14sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/dispute_order_completed_buyer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dispute_order_completed_orderno_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/dispute_order_completed_userimage"
+            android:text="@string/dispute_order_label_Buyer"
+            android:textColor="#4e4e4e"
+            android:textSize="15sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/dispute_order_completed_buyer_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dispute_order_completed_buyer_label"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/dispute_order_completed_buyer_label"
+            android:text=""
+            android:textColor="#A5A5A5"
+            android:textSize="14sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/dispute_order_completed_claim_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dispute_order_completed_userimage"
+            android:layout_below="@+id/dispute_order_completed_userimage"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/dispute_order_label_claimAmount"
+            android:textColor="#4e4e4e"
+            android:textSize="14sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/dispute_order_completed_claim_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dispute_order_completed_claim_label"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/dispute_order_completed_claim_label"
+            android:text=""
+            android:textColor="#06A555"
+            android:textSize="14sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/dispute_order_completed_claim_label"
+            android:layout_below="@+id/dispute_order_completed_claim_textview"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

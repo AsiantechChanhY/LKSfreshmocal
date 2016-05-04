@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DynamicElementsStorage">
+    <option name="containingClasses">
+      <map>
+        <entry key="org.gradle.api.artifacts.Configuration">
+          <value>
+            <DClassElement>
+              <option name="name" value="org.gradle.api.artifacts.Configuration" />
+              <option name="myName" value="org.gradle.api.artifacts.Configuration" />
+              <option name="myMethods">
+                <set>
+                  <DMethodElement>
+                    <option name="name" value="exclude" />
+                    <option name="static" value="false" />
+                    <option name="type" value="java.lang.Object" />
+                    <option name="myPairs">
+                      <list>
+                        <ParamInfo>
+                          <option name="name" value="linkedHashMap" />
+                          <option name="type" value="java.util.LinkedHashMap" />
+                        </ParamInfo>
+                      </list>
+                    </option>
+                    <option name="myType" value="java.lang.Object" />
+                    <option name="myStatic" value="false" />
+                    <option name="myName" value="exclude" />
+                  </DMethodElement>
+                </set>
+              </option>
+            </DClassElement>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

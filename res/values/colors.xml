@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="holo_blue_bright">#0000CC</color>
+    <color name="holo_green_light">#30AD23</color>
+    <color name="holo_orange_light">#FF9049</color>
+    <color name="holo_red_light">#CC0000</color>
+    <color name="material_blue_500">#5677fc</color>
+    
+    
+    <!-- Material Tab -->
+    <color name="DarkBlueColor">#1A237E</color>
+    <color name="ColorPrimary">#00897B</color>
+    <color name="ColorPrimaryDark">#00695C</color>
+    <color name="tabsScrollColor">#EBD8B6</color>
+    
+    
+    
+    
+     <color name="foo">#000000</color>
+    <color name="blue">#14b6b9</color>
+    <color name="light_text">#A6A8AB</color>
+    <color name="dark_text">#58595B</color>
+    
+    <color name="blue_normal">#129fa2</color>
+    <color name="blue_pressed">#ff0099cc</color>
+<!--     <color name="blue_normal">#ff33b5e5</color> -->
+    <color name="green_complete">#ff99cc00</color>
+    <color name="purple_progress">#ffaa66cc</color>
+    <color name="red_error">#ffff4444</color>
+
+   
+    
+    <color name="chat_white">#FFFFFF</color>
+    <color name="chat_green">#d5e3a5</color>
+    <color name="textColor">#000000</color>
+    
+    
+    <color name="blue_pressed1">#ff0099cc</color>
+    <color name="blue_normal1">#ff33b5e5</color>
+    <color name="green_complete1">#ff99cc00</color>
+    <color name="purple_progress1">#ffaa66cc</color>
+    <color name="red_error1">#ffff4444</color>
+
+    <color name="holo_blue_bright1">#ff00ddff</color>
+    <color name="holo_green_light1">#ff99cc00</color>
+    <color name="holo_orange_light1">#ffffbb33</color>
+    <color name="holo_red_light1">#ffff4444</color>
+    
+        <!-- FAB_BUTTON_COLOR -->
+
+<!--     <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white1">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color> -->
+    
+     <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#ffffff</color>
+    <color name="white1">#ef5959</color>
+    <color name="blue_color_btn">#2443b0</color>
+    <color name="white_pressed">#f38888</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    
+    
+</resources>

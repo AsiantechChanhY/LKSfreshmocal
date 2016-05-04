@@ -1,0 +1,8 @@
+<manifest package="com.example.material_floatbutton_libraryprem"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk android:minSdkVersion="14"/>
+
+    <application />
+
+</manifest>

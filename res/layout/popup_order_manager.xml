@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cdcdcd"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView_tittle_ordfer_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/manageordr"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/textView_popup_done_order_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:text="@string/done"
+                    android:textColor="#14b6b9"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="61dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_shoppolicies_add_item_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#cdcdcd"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout_order_manage_shipped"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView_order_manage_shipped"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/shipped"
+                            android:textSize="17sp"
+                            android:typeface="serif" />
+
+                        <ImageView
+                            android:id="@+id/imageView_order_manage_shipped_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/tick" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_order_manage_delivred"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dip"
+                        android:background="#ffffff"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView_order_manage_shipped"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/delivrd"
+                            android:textSize="17sp"
+                            android:typeface="serif" />
+
+                        <ImageView
+                            android:id="@+id/imageView_order_manage_delivred_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/tick" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_order_manage_canclled"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dip"
+                        android:background="#ffffff"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView_order_manage_cancelled"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="@string/cancelled"
+                            android:textSize="17sp"
+                            android:typeface="serif" />
+
+                        <ImageView
+                            android:id="@+id/imageView_order_manage_canclled_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/tick" />
+                    </RelativeLayout>
+                </LinearLayout>
+                                   
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

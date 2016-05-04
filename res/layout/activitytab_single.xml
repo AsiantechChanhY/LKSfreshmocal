@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F6F2" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/activitytab_single_type_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/order_icon" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/activitytab_single_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/activitytab_single_type_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/activitytab_single_time"
+            android:layout_toRightOf="@+id/activitytab_single_type_icon"
+            android:text="Hi this is prem"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/activitytab_single_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/activitytab_single_type_icon"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:text="Aug 3"
+            android:textSize="12sp"
+            android:textColor="#BEBEBE" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/activitytab_single_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activitytab_single_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/activitytab_single_productimage"
+            android:layout_toRightOf="@+id/activitytab_single_type_icon"
+            android:text="n fu sdyfhuids fui sdiuf iud fiusd uif dsof od foisd iofds jiod f"
+            android:textSize="12sp"
+            android:textColor="#939393" />
+
+        <ImageView
+            android:id="@+id/activitytab_single_productimage"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/activitytab_single_time"
+            android:layout_alignTop="@+id/activitytab_single_description"
+            android:scaleType="fitXY"
+            android:src="@drawable/nouserimg" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/activitytab_single_productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activitytab_single_description"
+            android:layout_below="@+id/activitytab_single_description"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/activitytab_single_productimage"
+            android:text="1000 Rs"
+            android:textColor="#6DA601"
+            android:textSize="12sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/activitytab_single_productprice"
+            android:layout_below="@+id/activitytab_single_productprice"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible" />
+        
+         <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/activitytab_single_productimage"
+            android:layout_below="@+id/activitytab_single_productimage"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

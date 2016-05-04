@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cdcdcd"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView_itemtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/itmtitl"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/textView_popup_done_itemtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/done"
+                    android:textColor="#14b6b9"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="61dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editText_popup_itemtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="top"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Give your listing a descriptive headline "
+                    android:maxLines="140" >
+                     <requestFocus />
+                </EditText>
+                
+                  <TextView
+                    android:id="@+id/textView_edittextbelow_itemtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText_popup_itemtitle"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/doublequotes"
+                    android:textColor="#14b6b9"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView_popup_itemtittle"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="@string/description"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

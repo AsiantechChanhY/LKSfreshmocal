@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/order_opentab_swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000" >
+
+            <RelativeLayout
+                android:id="@+id/order_opentab_nointernet_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="No intenet connection"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_opentab_loading_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/order_opentab_loading_gif"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/loadinganim4" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_opentab_loading_gif"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/order_opentab_preparing_dummytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data1"
+                        android:textColor="#4f4f4f" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/order_opentab_preparing_dummytext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/order_opentab_preparing_dummytext"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data2"
+                        android:textColor="#4f4f4f" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_opentab_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="visible" >
+
+                <ListView
+                    android:id="@+id/order_opentab_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#F7F6F2"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/order_opentab_list_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/order_opentab_listview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:text="@string/order_open_label_empty"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:typeface="sans"
+                    android:visibility="invisible" />
+
+                <com.example.material_floatbutton_libraryprem.FloatingActionMenu
+                    android:id="@+id/ordersopen_floating_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    fab:menu_backgroundColor="#ccffffff"
+                    fab:menu_colorNormal="#1A237E"
+                    fab:menu_colorPressed="#414a9b"
+                    fab:menu_colorRipple="#99FFFFFF"
+                    fab:menu_fab_hide_animation="@anim/fab_scale_down"
+                    fab:menu_fab_label=""
+                    fab:menu_fab_show_animation="@anim/fab_scale_up"
+                    fab:menu_fab_size="normal"
+                    fab:menu_icon="@drawable/menu_icon"
+                    fab:menu_labels_ellipsize="end"
+                    fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+                    fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+                    fab:menu_labels_singleLine="true"
+                    fab:menu_shadowColor="#66000000"
+                    fab:menu_shadowRadius="4dp"
+                    fab:menu_showShadow="true" >
+                </com.example.material_floatbutton_libraryprem.FloatingActionMenu>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="seekbar_markArray">
+        <item>0</item>
+        <item>100</item>
+        <item>250</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000+</item>
+         <!--  <item>∞</item> -->
+    </string-array>
+    <string-array name="countries_list">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Australia</item>
+        <item>Bangladesh</item>
+        <item>Bhutan</item>
+        <item>England</item>
+        <item>Finland</item>
+        <item>India</item>
+        <item>Saudi Arabia</item>
+        <item>Nepal</item>
+    </string-array>
+    
+     <string-array name="youritem_sort_list">
+        <item>Tittle: A to Z</item>
+        <item>Tittle: Z to A</item>
+        <item>Stock: Low to High</item>
+        <item>Stock: High to Low</item>
+        <item>Price: Low to High</item>
+        <item>Price: High to Low</item>
+    </string-array>
+    
+     <string-array name="fregment_item">
+        <item><b>Dashboard</b></item>
+        <item><b>Your Items</b></item>
+        <item><b>Orders</b></item>
+        <item><b>Dispute</b></item>
+        <item><b>Settings</b></item>
+    </string-array>
+
+</resources>

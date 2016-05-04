@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFEB" >
+
+    <com.shopsy.Utils.CircularImageView
+        android:id="@+id/allshop_product_userimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/userprofile"
+        app:civ_border="true"
+        app:civ_borderColor="#FFFFFFFF"
+        app:civ_borderWidth="4dp"
+        app:civ_selector="true"
+        app:civ_selectorColor="#4403a9f4"
+        app:civ_selectorStrokeColor="#aa5677fc"
+        app:civ_selectorStrokeWidth="4dp"
+        app:civ_shadow="true" />
+
+    <com.shopsy.Utils.CustomTextView
+        android:id="@+id/allshop_product_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allshop_product_userimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="Prem Kumar"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:typeface="sans" />
+
+    <com.shopsy.Utils.CustomTextView
+        android:id="@+id/allshop_product_usershopname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allshop_product_username"
+        android:layout_centerHorizontal="true"
+        android:text="Jhon shop"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:typeface="sans" />
+
+    <RelativeLayout
+        android:id="@+id/allshop_product_userlocation_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allshop_product_usershopname"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/allshop_product_markerimage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/marker_new" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/allshop_product_usershoplocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/allshop_product_markerimage"
+            android:text="Chennai ,India"
+            android:textColor="#A8A2A2"
+            android:textSize="12sp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/allshop_product_favourite_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/allshop_product_userlocation_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/allshop_product_view1"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/allshop_product_favourite_image"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/favredtwo" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/allshop_product_favourite_dummytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/allshop_product_favourite_image"
+                android:text="@string/allshop_product_favourite"
+                android:textColor="#0392B5"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/allshop_product_view1"
+        android:layout_width="2px"
+        android:layout_height="40dp"
+        android:layout_below="@+id/allshop_product_userlocation_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="#E1E1E1" />
+
+    <RelativeLayout
+        android:id="@+id/allshop_product_contact_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/allshop_product_userlocation_layout"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/allshop_product_view1"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/allshop_product_contact_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/contact_icon" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/allshop_product_contact_dummytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/allshop_product_contact_image"
+                android:text="@string/allshop_product_contact"
+                android:textColor="#0392B5"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/allshop_product_view2"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/allshop_product_view1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#E1E1E1" />
+
+    <RelativeLayout
+        android:id="@+id/allshop_product_review_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/allshop_product_view2"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/allshop_product_view3"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <RatingBar
+                android:id="@+id/allshop_product_review_ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:numStars="5"
+                android:rating="2.0" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/allshop_product_review_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/allshop_product_review_ratingBar"
+                android:layout_centerHorizontal="true"
+                android:text="(105 reviews)"
+                android:textColor="#0392B5"
+                android:textSize="12sp"
+                android:typeface="sans" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/allshop_product_view3"
+        android:layout_width="2px"
+        android:layout_height="40dp"
+        android:layout_below="@+id/allshop_product_view2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#E1E1E1" />
+
+    <RelativeLayout
+        android:id="@+id/allshop_product_shopinfo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/allshop_product_view2"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/allshop_product_view3"
+        android:background="#ffffff" >
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/allshop_product_shopinfo"
+            android:textColor="#0392B5"
+            android:textSize="14sp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/allshop_product_view4"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/allshop_product_view3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#E1E1E1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/allshop_product_view4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text=""
+        android:visibility="invisible" />
+
+</RelativeLayout>

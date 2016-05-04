@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/signin_popup_dummytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/signinpopup_text1"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <View
+            android:id="@+id/signin_popup_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/signin_popup_dummytext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#7F7D7E" />
+
+        <EditText
+            android:id="@+id/signin_popup_usernameeditText"
+            android:layout_width="fill_parent"
+            android:layout_height="37dp"
+            android:layout_below="@+id/signin_popup_view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_focused_listener"
+            android:hint="@string/signinpopup_email_hint"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp"
+            android:textColorHint="#4f4f4f"
+            android:textColor="#4f4f4f"
+            android:typeface="sans" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/signin_popup_pwdeditText"
+            android:layout_width="fill_parent"
+            android:layout_height="37dp"
+            android:layout_below="@+id/signin_popup_usernameeditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_focused_listener"
+            android:hint="@string/signinpopup_pwd_hint"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="14sp"
+            android:textColor="#4f4f4f"
+            android:typeface="sans" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/signinpopup_forgotpwdlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/signin_popup_pwdeditText"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/signinpopup_signinlayout"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/signinpopup_forgot_pwd"
+                android:textColor="#0D80D0"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/signinpopup_signinlayout"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/signin_popup_pwdeditText"
+            android:layout_below="@+id/signin_popup_pwdeditText"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="15dp"
+            android:background="#0D80D0" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/signinpopup_text1"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/signin_popup_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/signinpopup_forgotpwdlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="#7F7D7E" />
+
+        <RelativeLayout
+            android:id="@+id/signinpopup_account_registerlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@+id/signin_popup_view2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/signinpopup_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/signinpopup_account"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/signinpopup_textView1"
+                android:text="@string/signinpopup_register"
+                android:textColor="#0D80D0" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

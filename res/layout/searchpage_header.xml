@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1A237E" >
+
+    <RelativeLayout
+        android:id="@+id/search_header_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:id="@+id/search_header_backlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/search_header_backimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:id="@+id/search_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/search_header_backimage"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_header_cartrelativelayout"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/description" >
+
+            <ImageView
+                android:id="@+id/search_header_cart"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="3dp"
+                android:contentDescription="@string/description"
+                android:src="@drawable/cartone" />
+
+            <ProgressBar
+                android:id="@+id/search_header_cart_progressBar"
+                android:layout_width="22dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/search_header_cart"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/search_header_cartcountlayout"
+                android:layout_width="21dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/search_header_cart"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/layout_bg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/search_header_cartcounttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_header_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/search_header_top_layout"
+        android:layout_marginRight="15dp"
+        android:background="#efefef" >
+
+        <ImageView
+            android:id="@+id/search_header_searchimageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/search_greyicon" />
+
+        <EditText
+            android:id="@+id/search_header_search_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/search_header_search_cancel_layout"
+            android:layout_toRightOf="@+id/search_header_searchimageView"
+            android:background="#00000000"
+            android:hint="@string/search_label_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="#4f4f4f"
+            android:textColorHint="#4f4f4f"
+            android:textSize="16sp" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/search_header_search_mike_layout"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/microphone_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/search_header_bottomview"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/search_header_bottom_layout"
+        android:background="#00000000" />
+
+</RelativeLayout>

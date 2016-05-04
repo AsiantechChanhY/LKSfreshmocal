@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/manage_order_dialog_toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/manage_order_dialog_cancellayout"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/manage_order_dialog_cancel"
+                android:textColor="#0086AC"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/manage_order_dialog_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="#cdcdcd" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/manage_order_dialog_manageorder"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manage_order_dialog_shipped_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/manage_order_dialog_toplayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#DCDBD9" >
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/manage_order_dialog_shipped"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/manage_order_dialog_checkedone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/sorting_checkicon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manage_order_dialog_delivered_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/manage_order_dialog_shipped_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#DCDBD9" >
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/manage_order_dialog_delivered"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/manage_order_dialog_checkedtwo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/sorting_checkicon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manage_order_dialog_cancelled_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/manage_order_dialog_delivered_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#DCDBD9" >
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/manage_order_dialog_cancelled"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/manage_order_dialog_checkedthree"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/sorting_checkicon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manage_order_dialog_apply_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/manage_order_dialog_cancelled_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="visible" >
+
+        <View
+            android:id="@+id/manage_order_dialog_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignParentTop="true"
+            android:background="#cdcdcd" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/manage_order_dialog_apply"
+            android:textColor="#0086AC"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manage_order_dialog_loading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/manage_order_dialog_cancelled_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/manage_order_dialog_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignParentTop="true"
+            android:background="#cdcdcd" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/manage_order_dialog_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/manage_order_dialog_applying"
+            android:textColor="#0086AC"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <ProgressBar
+            android:id="@+id/manage_order_dialog_progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/manage_order_dialog_textView1" />
+    </RelativeLayout>
+
+</RelativeLayout>

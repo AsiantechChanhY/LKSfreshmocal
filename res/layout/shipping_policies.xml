@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/policycompanyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/ship_label_companyname"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#4f4f4f" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/welcometitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ship_label_Welcome"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#4f4f4f" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/policywelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#757171" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/paymenttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ship_label_Payment"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#4f4f4f" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/policypayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#757171" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/shippingtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ship_label_policyShipping"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#4f4f4f" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/policyshipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#757171" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/refundtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ship_label_refund"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#4f4f4f" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/policyrefund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="15sp" 
+                android:textColor="#757171"/>
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/Additionaltitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ship_label_additionalinfo"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#4f4f4f" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/policyAdditional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#757171" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/sellertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ship_label_sellerinfo"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#4f4f4f" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/policyseller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#757171" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

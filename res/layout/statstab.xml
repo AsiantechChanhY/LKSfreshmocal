@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000" >
+
+            <RelativeLayout
+                android:id="@+id/statstab_nointernet_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="No intenet connection"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statstab_loading_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/statstab_loading_gif"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/loadinganim4" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statstab_loading_gif"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/statstab_preparing_dummytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data1"
+                        android:textColor="#4f4f4f" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/statstab_preparing_dummytext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/statstab_preparing_dummytext"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data2"
+                        android:textColor="#4f4f4f" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statstab_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#F7F6F2"
+                android:visibility="visible" >
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/stats_tab_this_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/stats_label_thisMonth"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/stats_tab_spinner_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/stats_tab_this_month"
+                    android:layout_marginTop="10dp" >
+
+                    <Spinner
+                        android:id="@+id/stats_tab_spinner_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/stats_spinnerbackground"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/stats_tab_tax_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stats_tab_spinner_layout"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/stats_tab_tax_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/stats_label_tax"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/stats_tab_tax_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/stats_tab_tax_label"
+                        android:layout_below="@+id/stats_tab_tax_label"
+                        android:layout_marginTop="2dp"
+                        android:text="15,0000"
+                        android:textColor="#75AA24"
+                        android:textSize="20sp" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_alignLeft="@+id/stats_tab_tax_textview"
+                        android:layout_below="@+id/stats_tab_tax_textview"
+                        android:layout_marginTop="8dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/stats_tab_favorite_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stats_tab_tax_layout"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/stats_tab_favorite_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/stats_label_favorites"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/stats_tab_favorite_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/stats_tab_favorite_label"
+                        android:layout_below="@+id/stats_tab_favorite_label"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/stats_label_empty_novalue"
+                        android:textColor="#40A8C0"
+                        android:textSize="20sp" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_alignLeft="@+id/stats_tab_favorite_textview"
+                        android:layout_below="@+id/stats_tab_favorite_textview"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/stats_tab_revenue_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stats_tab_favorite_layout"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/stats_tab_revenue_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/stats_label_revenue"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/stats_tab_revenue_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/stats_tab_revenue_label"
+                        android:layout_below="@+id/stats_tab_revenue_label"
+                        android:layout_marginTop="2dp"
+                        android:text="15,0000"
+                        android:textColor="#75AA24"
+                        android:textSize="20sp" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_alignLeft="@+id/stats_tab_revenue_textview"
+                        android:layout_below="@+id/stats_tab_revenue_textview"
+                        android:layout_marginTop="8dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/stats_tab_order_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stats_tab_revenue_layout"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/stats_tab_order_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/stats_label_orders"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/stats_tab_order_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/stats_tab_order_label"
+                        android:layout_below="@+id/stats_tab_order_label"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/stats_label_empty_novalue"
+                        android:textColor="#40A8C0"
+                        android:textSize="20sp" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_alignLeft="@+id/stats_tab_order_textview"
+                        android:layout_below="@+id/stats_tab_order_textview"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_pop_up_edit_profile_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Manage Order"
+        android:textColor="#0080ff"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view_profileview1_edit_pop_up_edit_profile"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView_pop_up_edit_profile_gender"
+        android:layout_marginTop="15dp"
+        android:background="#0080ff" />
+
+    <RelativeLayout
+        android:id="@+id/relative_edit_pop_up_edit_profile_gender_male"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_profileview1_edit_pop_up_edit_profile" >
+
+        <TextView
+            android:id="@+id/textView1edit_pop_up_edit_profile_gender_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Copy Item"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/view_profileview1_edit_pop_up_edit_profile_gender_male"
+            android:layout_width="fill_parent"
+             android:layout_height="0.5dp"
+            android:layout_below="@+id/textView1edit_pop_up_edit_profile_gender_male"
+            android:layout_marginTop="15dp"
+            android:background="#cdcdcd" />
+    </RelativeLayout>
+<!-- 
+    <RelativeLayout
+        android:id="@+id/relative_edit_pop_up_edit_profile_gender_female"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_edit_pop_up_edit_profile_gender_male" >
+
+        <TextView
+            android:id="@+id/textView1edit_pop_up_edit_profile_gender_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Female"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/view_profileview1_edit_pop_up_edit_profile_gender_female"
+            android:layout_width="fill_parent"
+             android:layout_height="0.5dp"
+            android:layout_below="@+id/textView1edit_pop_up_edit_profile_gender_female"
+            android:layout_marginTop="15dp"
+            android:background="#cdcdcd" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/relative_edit_pop_up_edit_profile_gender_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_edit_pop_up_edit_profile_gender_female" >
+
+        <TextView
+            android:id="@+id/textView1edit_pop_up_edit_profile_gender_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Other"
+            android:textSize="17sp" />
+
+    </RelativeLayout> -->
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider_color">#b5b5b5</color>
+    <color name="fab_blue_color">#1A237E</color>
+    <color name="menu_fragment_background">#B3000000</color>
+    <color name="menu_item_background">#f2f2f2</color>
+    <color name="text_color">#222222</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="main_screen_side_padding">10dp</dimen>
+    <dimen name="menu_item_padding">2dp</dimen>
+    <dimen name="menu_text_size">15sp</dimen>
+    <dimen name="text_right_padding">28dp</dimen>
+    <dimen name="text_right_translation">8dp</dimen>
+    <dimen name="text_top_padding">25dp</dimen>
+    <dimen name="text_wrapper_right_margin">-8dp</dimen>
+    <dimen name="title_text_size">26sp</dimen>
+    <dimen name="tool_bar_height">56dp</dimen>
+    <dimen name="tool_bar_text_size">22sp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Material_ContextMenu_Library</string>
+    <string name="hello_world">Hello world!</string>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="MenuFragmentStyle" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorForeground">@android:color/transparent</item>
+        <item name="android:colorForegroundInverse">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="TextView"/>
+    <style name="TextView.DefaultStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/menu_text_size</item>
+    </style>
+</resources>

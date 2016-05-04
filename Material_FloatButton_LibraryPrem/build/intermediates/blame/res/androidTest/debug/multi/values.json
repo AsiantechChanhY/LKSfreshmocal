@@ -1,0 +1,140 @@
+[
+    {
+        "outputFile": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/res/merged/androidTest/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 3569,
+                    "endColumn": 44,
+                    "endOffset": 3609
+                },
+                "from": {
+                    "file": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 3569,
+                        "endColumn": 44,
+                        "endOffset": 3609
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 3614,
+                    "endColumn": 46,
+                    "endOffset": 3656
+                },
+                "from": {
+                    "file": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 3614,
+                        "endColumn": 46,
+                        "endOffset": 3656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 3661,
+                    "endColumn": 47,
+                    "endOffset": 3704
+                },
+                "from": {
+                    "file": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 3661,
+                        "endColumn": 47,
+                        "endOffset": 3704
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 3709,
+                    "endColumn": 38,
+                    "endOffset": 3743
+                },
+                "from": {
+                    "file": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 3709,
+                        "endColumn": 38,
+                        "endOffset": 3743
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 3748,
+                    "endColumn": 52,
+                    "endOffset": 3796
+                },
+                "from": {
+                    "file": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 3748,
+                        "endColumn": 52,
+                        "endOffset": 3796
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 3801,
+                    "endColumn": 69,
+                    "endOffset": 3866
+                },
+                "from": {
+                    "file": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 3801,
+                        "endColumn": 69,
+                        "endOffset": 3866
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 3871,
+                    "endColumn": 52,
+                    "endOffset": 3919
+                },
+                "from": {
+                    "file": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 3871,
+                        "endColumn": 52,
+                        "endOffset": 3919
+                    }
+                }
+            }
+        ]
+    }
+]

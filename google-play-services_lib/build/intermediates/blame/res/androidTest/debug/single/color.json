@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/google-play-services_lib/build/intermediates/res/merged/androidTest/debug/color/common_signin_btn_text_light.xml",
+        "source": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/google-play-services_lib/build/intermediates/bundles/debug/res/color/common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/google-play-services_lib/build/intermediates/res/merged/androidTest/debug/color/common_signin_btn_text_dark.xml",
+        "source": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/google-play-services_lib/build/intermediates/bundles/debug/res/color/common_signin_btn_text_dark.xml"
+    }
+]

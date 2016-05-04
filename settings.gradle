@@ -1,0 +1,1 @@
+include ':android-support-v7-appcompat', ':Material_ContextMenu_Library', ':Material_FloatButton_LibraryPrem', ':ViewPager_AutoSlider_Library', ':google-play-services_lib', ':Material_Dialog_Library', ':android-support-v7-CardView', ':FacebookSDK_Shopsy'

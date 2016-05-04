@@ -1,0 +1,70 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC" >
+
+    <!-- Side navigation drawer UI -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ECECEC" >
+
+        <ListView
+            android:id="@+id/navList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/drawer_openshop_layout"
+            android:layout_gravity="left|start"
+            android:divider="#ECECEC"
+            android:scrollbars="none"
+            android:dividerHeight="1px" />
+
+        <RelativeLayout
+            android:id="@+id/drawer_openshop_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ECECEC"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#cdcdcd" />
+
+            <ImageView
+                android:id="@+id/drawer_openshopicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/openshop_icon" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/drawer_openshop_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/drawer_openshopicon"
+                android:text="@string/drawer_list_openshop_label"
+                android:textColor="#4E4E4E"
+                android:textSize="17sp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

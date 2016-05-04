@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shopsy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="description">Description</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="context_menu">Context Menu</string>
+    <string name="dot">.</string>
+    <string name="pleasewait">Please Wait...</string>
+    <string name="updating">Updating</string>
+    <string name="ok">OK</string>
+     <string name="googleplus_authintication">Authenticating Please Wait...</string>
+        
+    <string name="facebookauthintication">Facebook Authentication Failed</string>
+    <string name="facebook_app_id">1496774857318614</string>
+
+    <!-- Lodaing data -->
+    <string name="loading_preparing_data1">Preparing your shopping</string>
+    <string name="loading_preparing_data2">experience</string>
+
+    <!-- No internet data -->
+    <string name="nointernet_data">No intenet connection</string>
+
+    <!-- Server Error data -->
+    <string name="serverError_data">Server Problem</string>
+
+    <!-- Favourite Popup -->
+    <string name="favpopup_text1">Sign in to save favorites</string>
+    <string name="favpopup_registertext">Register</string>
+    <string name="favpopup_signintext">Sign In</string>
+    <string name="favpopup_googleplustext">Continue with Google</string>
+    <string name="favpopup_facebooktext">Continue with FaceBook</string>
+
+    <!-- Sign in Popup -->
+    <string name="signinpopup_text1">Sign In</string>
+    <string name="signinpopup_email_hint">Email or Username</string>
+    <string name="signinpopup_pwd_hint">Password</string>
+    <string name="signinpopup_forgot_pwd">Forgot password?</string>
+    <string name="signinpopup_account">Don\'t have an account?</string>
+    <string name="signinpopup_register">Register</string>
+
+    
+    
+     <!-- Forgot Popup -->
+    <string name="Forgotpopup_text1">Forgot Password</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="forgot_submit">Submit</string>
+    
+    
+    <!-- register Popup -->
+    <string name="registerpopup_text1">Register</string>
+    <string name="registerpopup_firstname_hint">First Name</string>
+    <string name="registerpopup_lastname_hint">Last Name</string>
+    <string name="registerpopup_email">Email</string>
+    <string name="registerpopup_pwd">Password</string>
+    <string name="registerpopup_confirm_pwd">Confirm Password</string>
+    <string name="registerpopup_username_hint">Username</string>
+    <string name="registerpopup_terms_text1">By registering,you confirm that you accept our</string>
+    <string name="registerpopup_terms_text2">Terms of Use</string>
+    <string name="registerpopup_terms_text3">and</string>
+    <string name="registerpopup_terms_text4">Privacy Policy</string>
+    <string name="registerpopup_account">Have an account?</string>
+    <string name="registerpopup_signin">Sign In</string>
+
+    <!-- Home Drawer list -->
+    <string name="drawer_list_home_label">Home</string>
+    <string name="drawer_list_trending_label">Trending</string>
+    <string name="drawer_list_feed_label">Activity Feed</string>
+    <string name="drawer_list_conversation_label">Conversation</string>
+    <string name="drawer_list_allshop_label">All Shops</string>
+    <string name="drawer_list_browse_label">Browse</string>
+    <string name="drawer_list_purchases_label">Purchases</string>
+    <string name="drawer_list_settings_label">Settings</string>
+    <string name="drawer_list_openshop_label">Open Shop</string>
+    <string name="drawer_list_myshop_label">My Shop</string>
+    <string name="drawer_list_signin_label">SIGNIN</string>
+
+    <!-- Activity feed -->
+    <string name="signinfeeddata1">Sign in to favourite items,and</string>
+    <string name="signinfeeddata2">customize your own personal feed.</string>
+    <string name="takeminutefeeddata">It will just take a minute.</string>
+    <string name="signinfeeddata3">Sign In</string>
+    <string name="nofeeddata">No Feed Available</string>
+    <string name="ideadata">Looking for ideas</string>
+    <string name="seetrendingdata">See Trending items</string>
+
+    <!-- Category -->
+    <string name="cateroryheader_title">All Categories</string>
+    <string name="label_caterory_empty">No Categories Found</string>
+
+    <!-- Sub Category Product -->
+    <string name="subcaterory_product_filter">FILTER</string>
+    <string name="subcaterory_product_sort">SORT</string>
+
+    <!-- Sub Category Product Sort Dialog -->
+    <string name="subcaterory_product_sort_dialog_sorting">Sorting</string>
+    <string name="subcaterory_product_sort_dialog_cancel">CANCEL</string>
+    <string name="subcaterory_product_sort_dialog_mostrecent">Most Recent</string>
+    <string name="subcaterory_product_sort_dialog_highprice">Highest Price</string>
+    <string name="subcaterory_product_sort_dialog_lowprice">Lowest Price</string>
+    <string name="subcaterory_product_sort_dialog_apply">Apply</string>
+
+    <!-- All Shop Product -->
+    <string name="allshop_product_favourite">Favorite</string>
+    <string name="allshop_product_contact">Contact</string>
+    <string name="allshop_product_shopinfo">Shop Info</string>
+
+    <!-- Settings Page -->
+    <string name="settings_label_account">Account</string>
+    <string name="settings_label_notification">Notification</string>
+    <string name="settings_label_currency">Currency</string>
+    <string name="settings_label_advancesettings">Advance Settings</string>
+    <string name="settings_label_logout">Logout</string>
+
+    <!-- Advance Settings Page -->
+    <string name="advance_settings_label_bandwidth">Bandwidth Mode</string>
+    <string name="advance_settings_label_bandwidth_info">Load low-resoluction pictures. This will make the app load faster and use less data.</string>
+    <string name="advance_settings_label_bandwidth_select">Select Bandwidth Mode</string>
+    <string name="advance_settings_label_bandwidth_auto">Auto</string>
+    <string name="advance_settings_label_bandwidth_high">High</string>
+    <string name="advance_settings_label_bandwidth_low">Low</string>
+    <string name="advance_settings_label_bandwidth_cancel">CANCEL</string>
+    <string name="advance_settings_label_bandwidth_okay">Okay</string>
+
+    <!-- search page -->
+    <string name="search_label_hint">Search</string>
+
+    <!-- Detail page -->
+    <string name="detail_label_quantity">Quantity</string>
+    <string name="detail_label_size">Size</string>
+    <string name="detail_label_color">Color</string>
+    <string name="detail_label_select_size">Select Size</string>
+    <string name="detail_label_select_color">Select Color</string>
+    <string name="detail_label_reviews">Reviews</string>
+    <string name="detail_label_seeallreviews">See All Reviews</string>
+    <string name="detail_label_item_overview">Item Overview</string>
+    <string name="detail_label_item_details">Item Details</string>
+    <string name="detail_label_shipping">Shipping and Payment</string>
+    <string name="detail_label_addtocart">Add to Cart</string>
+    <string name="detail_label_addedtocart">Added to Cart</string>
+    <string name="detail_label_paymentmethod">Payment Methods</string>
+    <string name="detail_label_shippingto">Shipping To</string>
+    <string name="detail_label_cost">Cost</string>
+    <string name="detail_label_withanotheritem">With Another</string>
+    <string name="detail_label_readytoship">Ready to Ship in</string>
+    <string name="detail_label_businessdays">business days</string>
+    <string name="detail_label_policies">Policies</string>
+    <string name="detail_label_visitshop">Visit Shop</string>
+    <string name="detail_label_madeby_caps">MADE BY</string>
+    <string name="detail_label_views">Views</string>
+    <string name="detail_label_favorites">Favorites</string>
+    <string name="detail_label_listedon">This item was listed on</string>
+    <string name="detail_label_reviewby">Review by</string>
+    <string name="detail_label_askquestion">Ask a Question</string>
+
+    <!-- Shipping Policy Page -->
+    <string name="ship_label_shipping_policies_header">Shop Policies</string>
+    <string name="ship_label_companyname">company name</string>
+    <string name="ship_label_Welcome">Welcome</string>
+    <string name="ship_label_Payment">Payment</string>
+    <string name="ship_label_policyShipping">Shipping</string>
+    <string name="ship_label_refund">Refunds and Exchanges</string>
+    <string name="ship_label_additionalinfo">Additional Information</string>
+    <string name="ship_label_sellerinfo">Seller Information</string>
+
+    <!-- See all review Page -->
+    <string name="seeall_review_label_header_itemreview">Item Reviews</string>
+    <string name="seeall_review_label_review">Reviews</string>
+
+    <!-- cart Page -->
+    <string name="cart_label_readytoship">Ready to ship in:</string>
+    <string name="cart_label_itemtotal">Item Total</string>
+    <string name="cart_label_shipping">Shipping</string>
+    <string name="cart_label_ordertotal">Order Total</string>
+    <string name="cart_label_checkout">CHECK OUT</string>
+    <string name="cart_label_howyou_will_pay">How You\'ll Pay</string>
+    <string name="cart_label_addcoupon_code">Add a coupon code</string>
+    <string name="cart_label_add_note">Add optional note to seller</string>
+    <string name="cart_label_quantity">Quantity</string>
+    <string name="label_cart_empty">Cart is Empty</string>
+
+    <!-- cart Delete shop Dialog -->
+    <string name="cart_label_dialog_text">Remove this item from cart?</string>
+    <string name="cart_label_dialog_shopdelete">Remove this shop and all items from cart?</string>
+    <string name="cart_label_dialog_no">No</string>
+    <string name="cart_label_dialog_yes">Yes</string>
+
+    <!-- cart header layout -->
+    <string name="cart_label_header">Your Cart</string>
+
+    <!-- cart Add coupon Dialog -->
+    <string name="cart_label_coupon_insert">Insert Coupon Code</string>
+    <string name="cart_label_coupon_apply">Apply</string>
+    <string name="cart_label_coupon_cancel">Cancel</string>
+    <string name="cart_label_coupon_remove">Remove</string>
+
+    <!-- cart menu options -->
+    <string name="cart_label_menu_removeitem">Remove Items</string>
+    <string name="cart_label_menu_visitshop">Visit Shop</string>
+
+    <!-- payment Dialog -->
+    <string name="payment_dialog_text">Pressing back would cancel your current transcation.Proceed anyway ?</string>
+
+    <!-- conversation layout -->
+    <string name="label_conversation_empty">No Conversation Available</string>
+    <string name="label_conversation_morereplies">more replies</string>
+
+    <!-- conversation chat popup -->
+    <string name="chat_popup_label_title">New conversation with</string>
+    <string name="chat_popup_label_subject">Subject</string>
+    <string name="chat_popup_label_message">Message</string>
+    <string name="chat_popup_label_send">Send</string>
+    <string name="chat_popup_label_sending">Sending...</string>
+    <string name="chat_popup_label_send_successfully">Sent Successfully</string>
+
+    <!-- Openshop layout -->
+    <string name="openshop_label_dashboard">Dashboard</string>
+
+    <!-- Activity Tab layout -->
+    <string name="activiy_tab_noActivity_label">You don\'t have any activity yet</string>
+    <string name="activiy_tab_youritem_label">Your Items</string>
+    <string name="activiy_tab_addproducts_label">Add Products</string>
+    <string name="activiy_tab_reviews_label">Reviews</string>
+    <string name="activiy_tab_orders_label">Orders</string>
+    <string name="activiy_tab_dispute_label">Dispute</string>
+    <string name="activiy_tab_conversation_label">Conversation</string>
+
+    <!-- Stats Tab layout -->
+    <string name="stats_label_thisMonth">This Month</string>
+    <string name="stats_label_today">Today</string>
+    <string name="stats_label_last7days">Last 7 days</string>
+    <string name="stats_label_week">Week</string>
+    <string name="stats_label_last30days">Last 30 days</string>
+    <string name="stats_label_viewall">View All</string>
+    <string name="stats_label_tax">Tax</string>
+    <string name="stats_label_favorites">Favorites</string>
+    <string name="stats_label_revenue">Revenue</string>
+    <string name="stats_label_orders">Orders</string>
+    <string name="stats_label_empty_novalue">---</string>
+    <string name="stats_label_loading">Please Wait....</string>
+
+    <!-- Order layout -->
+    <string name="order_label_order">Orders</string>
+
+    <!-- Order Open Tab layout -->
+    <string name="order_open_label_empty">No Orders Found</string>
+    <string name="order_open_label_quantity">Quantity :</string>
+    <string name="order_open_label_orderid">OrderId :</string>
+    <string name="order_open_label_orderTotal">ORDER TOTAL</string>
+    <string name="order_open_label_status">STATUS</string>
+
+    <!-- Order Detail layout -->
+    <string name="order_detail_label_manageOrder">Manage Order</string>
+    <string name="order_detail_label_solveDispute">Solved Dispute</string>
+    <string name="order_detail_label_paid">PAID</string>
+    <string name="order_detail_label_shipped">SHIPPED</string>
+    <string name="order_detail_label_processed">PROCESSED</string>
+    <string name="order_detail_label_ordertotal">ORDER TOTAL</string>
+    <string name="order_detail_label_orderon">ORDER ON</string>
+    <string name="order_detail_label_buyer">BUYER</string>
+    <string name="order_detail_label_sendmessage">Send a Message</string>
+    <string name="order_detail_label_itemtotal">ITEM TOTAL</string>
+    <string name="order_detail_label_shipping">SHIPPING</string>
+    <string name="order_detail_label_coupondiscount">COUPON DISCOUNT</string>
+    <string name="order_detail_label_giftdiscount">GIFT DISCOUNT</string>
+    <string name="order_detail_label_tax">TAX</string>
+    <string name="order_detail_label_grandtotal">GRAND TOTAL</string>
+    <string name="order_detail_label_totalitem">TOTAL ITEM</string>
+    <string name="order_detail_label_order">Order</string>
+    <string name="order_detail_label_quantity">Quantity :</string>
+    <string name="order_detail_label_price">Price :</string>
+    <string name="order_detail_label_footer_itemTotal">Item Total :</string>
+    <string name="order_detail_label_orderDetail">Order Details</string>
+
+    <!-- Order Detail Manage Order Dialog -->
+    <string name="manage_order_dialog_manageorder">Manage Order</string>
+    <string name="manage_order_dialog_cancel">CANCEL</string>
+    <string name="manage_order_dialog_apply">APPLY</string>
+    <string name="manage_order_dialog_applying">Applying...</string>
+    <string name="manage_order_dialog_shipped">Shipped</string>
+    <string name="manage_order_dialog_delivered">Delivered</string>
+    <string name="manage_order_dialog_cancelled">Cancelled</string>
+
+    <!-- Dispute page -->
+    <string name="dispute_header_title">Dispute Discussion</string>
+    
+    <!-- Dispute Open order page -->
+    <string name="dispute_order_label_orderNo">Order No :</string>
+    <string name="dispute_order_label_Buyer">Buyer :</string>
+    <string name="dispute_order_label_claimAmount">Claim Amount :</string>
+    <string name="dispute_order_open_label_empty">No message available here</string>
+
+    <!-- UserProfile page -->
+    <string name="userprofile_following_label">FOLLOWING</string>
+    <string name="userprofile_follower_label">FOLLOWERS</string>
+    <string name="userprofile_favoriteitem_label">FAVORITE ITEMS</string>
+    <string name="userprofile_itemlove_label">Items I Love</string>
+    <string name="userprofile_items_label">items</string>
+    <string name="userprofile_favoriteshop_label">FAVORITE SHOPS</string>
+    <string name="userprofile_seeshops_label">See all favorite shops</string>
+    <string name="userprofile_about_label">ABOUT</string>
+    <string name="userprofile_joined_label">Joined on</string>
+
+    <!-- Recommended Tab page -->
+    <string name="recommended_label_featuresproducts">Featured Products</string>
+    <string name="recommended_label_featuresshops">Featured shop</string>
+    <string name="recommended_label_topseller">Top Sellers</string>
+    <string name="recommended_label_recentproducts">Recent Products</string>
+    <string name="recommended_label_viewall">View All</string>
+
+    <!-- Recommended Tab page -->
+    <string name="picks_label_categories">Categories</string>
+    <string name="picks_label_recentproducts">Recent Products</string>
+
+    <!-- Your Items layout -->
+    <string name="label_youritem_empty">No Items Available</string>
+    <string name="label_youritem_instock">In Stock :</string>
+    <string name="label_youritem_search">Search your items</string>
+
+    <!-- Your Item Fiter Layout -->
+    <string name="filterall">All</string>
+    <string name="filteractive">Active</string>
+    <string name="filterdraft">Draft</string>
+    <string name="filterexpired">Expired</string>
+    <string name="filtersoldoute">Soldout</string>
+    <string name="filterinactive">Inactive</string>
+    <string name="morefilter">MORE FILTERS</string>
+    <string name="filterfeatuereitems">Feature items</string>
+    <string name="filterfeatuereitemsheading">ITEM STATUS</string>
+    <string name="sortby">SORT BY</string>
+    <string name="label_youritem_filter_apply">APPLY</string>
+    <string name="label_youritem_filter">Filter</string>
+
+    <!-- Dispute Order layout -->
+    <string name="disputeorder_label_dispute">Dispute</string>
+
+    <!-- Purchase layout -->
+    <string name="purchase_label_purchase">Your Purchases</string>
+
+    <!-- Reviews layout -->
+    <string name="label_reviews_empty">No Reviews Found</string>
+    <string name="label_report_review">Report this review</string>
+
+    <!-- Reviews Report Dialog layout -->
+    <string name="label_report_dialog_reviews">Report this review</string>
+    <string name="label_report_dialog_report">Report</string>
+    <string name="label_report_dialog_message">Type your message here</string>
+
+    <!-- Purchase OrderDetails Manage Order Button -->
+    <string name="label_manage_order_Processed">Processed</string>
+    <string name="label_manage_order_notreceived_yet">Not received yet</string>
+    <string name="label_manage_order_RequestedCancel">Requested Cancel</string>
+    <string name="label_manage_order_Cancelled">Cancelled</string>
+    <string name="label_manage_order_Shipped">Shipped</string>
+    <string name="label_manage_order_Productreceived">Product received</string>
+    <string name="label_manage_order_Delivered">Delivered</string>
+    <string name="label_manage_order_ReShipment">ReShipment</string>
+    <string name="label_manage_order_Refund">Refund</string>
+    <string name="label_manage_order_CancelOrder">Cancel Order</string>
+    <string name="label_manage_order_RequestedRefund">Requested Refund</string>
+    <string name="label_manage_order_OrderCancelled">Order Cancelled</string>
+    <string name="label_manage_order_ReturnReplace">Return / Replace</string>
+    <string name="label_manage_order_Requested_ReturnReplace">Requested Return / Replace</string>
+    <string name="label_manage_order_EstimedDeliveryDate">Estimed Delivery Date :</string>
+	<string name="label_manage_order_ShippingId">Shipping Id :</string>
+    <string name="label_manage_order_reship_a_new_product">Reship a new product</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Your seller layout -->
+
+
+    <!-- add_item1 -->
+    <string name="aboutitem"> ABOUT ITEM</string>
+    <string name="whomade"> Who made this item?</string>
+    <string name="idid"> I did</string>
+    <string name="another"> Another company or person</string>
+    <string name="amemberofmyshop"> A member of my shop</string>
+
+    <!-- add_item2 -->
+
+    <string name="what"> What is it?</string>
+    <string name="afinishedproduct"> A finished product</string>
+    <string name="asupplyortool"> A supply or tool</string>
+
+    <!-- add_item3 -->
+    <string name="whendid"> When did you make it?</string>
+    <string name="madetoordr"> Made To Order</string>
+
+    <!-- add_item-final -->
+    <string name="addphotos"> Add Photos</string>
+    <string name="conveytheshape"> Convey the shape,color,size and texture.Try to use natural light and include a great close up.</string>
+    <string name="itmtitle"> Item Title</string>
+    <string name="giveyourliting"> Give your listing a descriptive headline</string>
+    <string name="price">Price</string>
+    <string name="hundrd">$</string>
+    <string name="qunantity">Quantity</string>
+    <string name="one"> 1</string>
+    <string name="androidgoogle">android google ios phone mobile data computer.</string>
+    <string name="shipping">Shipping</string>
+    <string name="addashiping">add a shipping profile or create a new one.</string>
+    <string name="helpbuyers"> Help buyers to find your item</string>
+    <string name="usetheseoptional"> Use these optional fields to help buyers search for your item.</string>
+    <string name="addtags">Add Tags</string>
+    <string name="addupto">Add upto 13 tags.</string>
+    <string name="addmateril">Add Materials</string>
+    <string name="adduptometrial"> Add upto 13 materials used in your item.</string>
+    <string name="typeandcategories">Type and Categories</string>
+    <string name="finishdproduct">FINISHED PRODUCT</string>
+    <string name="madeeby">Made by </string>
+    <string name="me">me</string>
+    <string name="madetoorder">Made to Order</string>
+    <string name="accessories"> Accessories</string>
+    <string name="grater"> ></string>
+    <string name="child">child</string>
+    <string name="apron">Apron</string>
+    <string name="manage">MANAGE</string>
+    <string name="share">SHARE</string>
+
+    <!-- aad_item_photo -->
+    <string name="addphoto">Add Photo</string>
+    <string name="doublequotes">""</string>
+
+    <!-- add_item_shipingprofile_detail -->
+    <string name="profiletitle">PROFILE TITLE</string>
+    <string name="processtime">PROCESSING TIME</string>
+    <string name="shipsfrom">SHIPS FROM</string>
+    <string name="shipsto">SHIPS TO</string>
+    <string name="destinations">DESTINATION</string>
+    <string name="shipingcost">SHIPPING COST</string>
+    <string name="wtitem">WITH ANOTHER ITEM</string>
+    <string name="addlocation">Add Location</string>
+
+    <!-- add_item_shippingprofile -->
+    <string name="newshipingprofile">NEW SHIPPING PROFILE</string>
+    <string name="shipingprodetil">Shipping Profile Details</string>
+    <string name="tittle">tittle</string>
+    <string name="timee">time</string>
+    <string name="from">From</string>
+    <string name="dest">Dest</string>
+    <string name="cost">cost</string>
+    <string name="anothercost">another cost</string>
+    <string name="createprofile">Create a Shipping Profile</string>
+    <string name="createshipingpro">Create a shipping profile and add  it to  your listing item</string>
+
+    <!-- add-material -->
+    <string name="addmaterial">Add Material</string>
+    <string name="done">Done</string>
+
+    <!-- custom_actionbar -->
+    <string name="newshippingprofile">New Shipping Profile</string>
+    <string name="save">SAVE</string>
+
+    <!-- dicussion_upload -->
+    <string name="addphototoupload">Add Photo To Upload</string>
+    <string name="upload">Upload</string>
+
+    <!-- disput_closed-adapter -->
+    <string name="orderno">Order No:</string>
+    <string name="numbr">112231341</string>
+    <string name="buyer">Buyer :</string>
+    <string name="disput"> 100.0</string>
+    <string name="disputename">disputename</string>
+    <string name="usd">USD</string>
+    <string name="claimamount">Claim Amount :</string>
+    <!-- same in open-adapter -->
+
+
+    <!-- dispute_discussion_adapter_parent -->
+    <string name="postrname">Poster Name</string>
+    <string name="msg">Msg</string>
+    <string name="date">date</string>
+
+    <!-- dispute_discussion_adapter_parent1 -->
+    <!-- same in dispute_discussion_adapter_parent -->
+
+
+    <!-- login -->
+    <string name="sellonshopsy">Sell on Shopsy</string>
+    <string name="takeyourphoto">Take your shop to</string>
+    <string name="newplaces">new places</string>
+    <string name="signin">Sign In</string>
+    <string name="donthavshop">Dont have a shop?</string>
+
+    <!-- order_details_child_adapter -->
+    <string name="shopsyjee">Shopsyy  jhee androiud</string>
+    <string name="quantity">Quantity: </string>
+    <string name="itemtotal">Item Total:</string>
+
+    <!-- order_details_header_adapter -->
+    <string name="order">ORDER :</string>
+    <string name="num">112335454</string>
+    <string name="on">On</string>
+    <string name="Paid">Paid</string>
+    <string name="manageordr">Manage Order</string>
+    <string name="ordrtotl">Order Total </string>
+    <string name="status">Order On</string>
+    <string name="dollersym">$25.5</string>
+    <string name="buyr">Buyer</string>
+    <string name="jhon">JHON</string>
+    <string name="viewchat">View Message</string>
+    <string name="itmtotl">Item Total </string>
+    <string name="shiping">Shipping </string>
+    <string name="coupon">Coupon </string>
+    <string name="gift">Gift </string>
+    <string name="tax">Tax </string>
+    <string name="grandtotal">Grand Total </string>
+    <string name="totalitem">Total Items</string>
+    <string name="delivrd">Delivered </string>
+
+    <!-- order_tab_completed1_adapter -->
+    <string name="ordrtol">OrderTotal </string>
+    <string name="hepurchasd">he purchased 3 items </string>
+    <string name="statuus">Status </string>
+    <string name="deliv">Delivered </string>
+    <string name="ordron">Ordered On</string>
+
+    <!-- order_tab-open_adapter -->
+    <string name="ordrtotll">Order Total </string>
+    <string name="statuss">Status </string>
+    <string name="processed">Processed </string>
+    <string name="ordronn">Ordered On</string>
+
+    <!-- popup_addmaterials -->
+    <string name="adddmateril">Add Materials</string>
+
+    <!-- popup-addtag -->
+    <string name="adtags">Add Tags</string>
+
+    <!-- popup_description -->
+    <string name="itmdtils">Item Details</string>
+
+    <!-- popup_itemtitle -->
+    <string name="itmtitl">Item Title</string>
+
+    <!-- popup_ordermanger -->
+    <string name="shipped">Shipped</string>
+    <string name="cancelled">Cancelled</string>
+
+    <!-- popup_price -->
+    <string name="signn">USD</string>
+    <string name="matlobr">Materials + Labor + Expenses + Profit = Item Price</string>
+
+    <!-- popup_quantity -->
+    <string name="howmany">How many do you have to sell ?$</string>
+    <string name="addquentity">How many do you sale?</string>
+    <!-- setting_fragment -->
+    <string name="notifiaction">Notifications FAQ</string>
+    <string name="notifiactionsettings">Notification Settings</string>
+    <string name="helpcentr">Sell on Shopsy Help Center</string>
+
+    <!-- sherlock_fragment_main -->
+    <string name="profname">Profile Name</string>
+    <string name="rating">Review</string>
+    <string name="acccount">Account</string>
+
+    <!-- sherlock-home_reviwes -->
+    <string name="reviewss">Reviwes</string>
+    <string name="textt">Here you can see reviews from the past year, respopnd to buyers directly, and view your shops averagerating.(We have got a five star feeling about you)</string>
+
+    <!-- Statetab -->
+    <string name="thismonth">This Month</string>
+    <string name="taxx">Tax</string>
+    <string name="line">---</string>
+    <string name="favoritess">Favorites</string>
+    <string name="revenu">Revenue</string>
+    <string name="orderss">Orders</string>
+
+    <!-- testing1 -->
+    <string name="proname">Profile Name</string>
+    <!-- youritem_adapter -->
+    <string name="instock">In Stock</string>
+    <string name="infoappearance">Info and Appearance</string>
+    <string name="introducetoworld">Introduce the world to your shop</string>
+    <string name="shoppolicies">Shop Policies</string>
+    <string name="telltoshoppers">Tell Shoppers how you run your shop: payments,shipping,refunds and more </string>
+    <string name="yourshopinshopsy">Your Shop in the Shopsy App</string>
+    <string name="signout">Sign Out</string>
+    <string name="reviews">No Recent Reviews</string>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing…</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="ACCOUNT_TYPE">com.app.groopie.account</string>
+    <string name="authenticating">Authenticating</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="image_details">Image Details</string>
+    <string name="pair_cols">2</string>
+    <string name="internet_no_connection_parent">No Connection</string>
+    <string name="internet_no_connection_child">your internet connection appears</string>
+    <string name="internet_no_connection_child1">to be offline.</string>
+    <string name="fregment_dashbooard"><b>Dashboard</b></string>
+    <string name="fregment_youitem"><b>Your Items</b></string>
+    <string name="fregment_orders"><b>Orders</b></string>
+    <string name="fregment_dispute"><b>Dispute</b></string>
+    <string name="fregment_settings"><b>Settings</b></string>
+    <string name="toast_crash">Something went wrong :( But no worries, a report has been sent to help fix the issue.</string>
+
+    <!-- YourItem -->
+    <string name="youritemsearch">Search your items</string>
+    <string name="ordersearch">Search your orders</string>
+
+    <!-- Activity Adapter -->
+    <string name="surashfavorbjghkgkhkitedyouritem">surash favorbjghkgkhkited your item</string>
+    <string name="time">19nov</string>
+    <string name="ribbon">ribbon</string>
+    <string name="doller">us$</string>
+
+    <!-- Activity_Detail_Adapter -->
+    <string name="shopname">shopname</string>
+    <string name="prize">prize</string>
+
+    <!-- Activity_Details -->
+    <string name="name">Name</string>
+    <string name="countrydfsdf">countrydfsdf</string>
+    <string name="member">member</string>
+    <string name="followingcount">followingcount</string>
+    <string name="followers">followers</string>
+    <string name="followerscount">followerscount</string>
+    <string name="following">following</string>
+    <string name="favoritescount">favoritescount</string>
+    <string name="favorites">favorites</string>
+    <string name="follow">follow</string>
+    <string name="favoriteitems">Favorite Items</string>
+    <string name="viwprofile"> View Full Profile</string>
+    <string name="textview"> Text</string>
+
+</resources>

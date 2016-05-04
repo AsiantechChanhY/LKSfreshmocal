@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_item_cate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/category_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/loading_image_item_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/loading2" />
+    
+    <ProgressBar
+        android:id="@+id/loading_image_activetab_progress6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_itemcategories_nointernet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+
+        <ScrollView
+            android:id="@+id/scrollView1_itemcategories_nointernet"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout_itemcategories_nointernet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_itemcategories_nointernet1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView1_itemcategories_nointernet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/internet_wifi_error" />
+
+                    <TextView
+                        android:id="@+id/textView1_itemcategories_connection_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView1_itemcategories_nointernet"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="internet_no_connection_parent"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/textView1_itemcategories_connection_child"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1_itemcategories_connection_heading"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="internet_no_connection_child"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/textView1_itemcategories_connection_child2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1_itemcategories_connection_child"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="internet_no_connection_child1"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+                    
+                     <ImageView
+                        android:id="@+id/imageView1_itemcategories_connection_refresh"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/textView1_itemcategories_connection_child2"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/destinations"
+                        android:src="@drawable/refresh" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

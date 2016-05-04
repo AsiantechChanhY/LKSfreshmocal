@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/filter_add_item_menu_reset_filter"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="RESET FILTER"/>
+    <item
+        android:id="@+id/filter_add_item_menu"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="GO"/>
+
+</menu>

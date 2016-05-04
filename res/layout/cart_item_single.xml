@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/cart_single_productimage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image_grey" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/cart_single_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cart_single_productimage"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/cart_single_productimage"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/cart_single_delete_layout"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cancel_greyicon" />
+        </RelativeLayout>
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/cart_single_productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_single_productname"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/cart_single_productimage"
+            android:text="100 Rs"
+            android:textColor="#228B22"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/cart_single_spinner1_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:layout_below="@+id/cart_single_productprice"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/cart_single_productimage" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/cart_single_spinner1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Quantity"
+                android:textColor="#4f4f4f"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/cart_single_spinner1_view"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="#00000000" />
+
+            <Spinner
+                android:id="@+id/cart_spinner1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/cart_spinner1_arrow_image"
+                android:layout_toRightOf="@+id/cart_single_spinner1_view"
+                android:background="@drawable/spinnerbackground_empty"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp" />
+
+            <ImageView
+                android:id="@+id/cart_spinner1_arrow_image"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/spinnerbackground_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cart_single_spinner2_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:layout_below="@+id/cart_single_spinner1_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/cart_single_productimage" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/cart_single_spinner2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="#4f4f4f"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/cart_single_spinner2_view"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="#00000000" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/cart_spinner2_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/cart_spinner2_arrow_image"
+                android:layout_toRightOf="@+id/cart_single_spinner2_view"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp"
+                android:text=""
+                android:textColor="#44A8C3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/cart_spinner2_arrow_image"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/spinnerbackground_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cart_single_spinner3_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:layout_below="@+id/cart_single_spinner2_layout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/cart_single_productimage" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/cart_single_spinner3_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="#4f4f4f"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/cart_single_spinner3_view"
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="#00000000" />
+
+            
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/cart_spinner3_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/cart_spinner3_arrow_image"
+                android:layout_toRightOf="@+id/cart_single_spinner3_view"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp"
+                android:text=""
+                android:textColor="#44A8C3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/cart_spinner3_arrow_image"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/spinnerbackground_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cart_single_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/cart_single_spinner3_layout"
+            android:layout_marginTop="10dp"
+            android:background="#cdcdcd" />
+    </RelativeLayout>
+
+</RelativeLayout>

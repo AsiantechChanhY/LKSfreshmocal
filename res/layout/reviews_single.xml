@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f1f1f1" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff" >
+
+        <com.shopsy.Utils.RoundedImageView
+            android:id="@+id/review_single_userimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/review_single_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review_single_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/review_single_userimage"
+            android:text="fgggggg"
+            android:textColor="#4c4c4c"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/review_single_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/date"
+            android:textColor="#848484"
+            android:textSize="11sp" />
+
+        <RatingBar
+            android:id="@+id/review_single_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/review_single_content"
+            android:layout_below="@+id/review_single_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="7dp" />
+
+        <RelativeLayout
+            android:id="@+id/review_single_reply"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/review_single_rating"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/label_report_review"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

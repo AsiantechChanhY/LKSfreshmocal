@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:background="#ffffff" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_newshipp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_shippinprofileTitemitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/profiletitle"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shippingporfil"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_shippinprofileTitemitle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textView_newshippingprofileprocessingtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_shippingporfil"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/processtime"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner_newshippingprofileprocesstime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingprofileprocessingtime"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView_newshippingprofileShipsfrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_newshippingprofileprocesstime"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shipsfrom"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner_newshippingprofileshipsfrom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingprofileShipsfrom"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView_newshippingprofilShipsTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/shipsto"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_newShippingprofille"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_Newshippingdestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/destinations"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner_des_newshippingprofileshipsfrom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_Newshippingdestination"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView_newshippingShippingcost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_des_newshippingprofileshipsfrom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shipingcost"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_shippingporfil"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingShippingcost"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textView_newshippingWithanotherItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_shipping_cost_shippingporfil"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/wtitem"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_another_shippingporfil"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingWithanotherItem"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_frame_newShippingprofille1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_newShippingprofille1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_Newshippingdestination1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/destinations"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner_des_newshippingprofileshipsfrom1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_Newshippingdestination1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView_newshippingShippingcost1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_des_newshippingprofileshipsfrom1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shipingcost"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_shippingporfil1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingShippingcost1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textView_newshippingWithanotherItem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_shipping_cost_shippingporfil1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/wtitem"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_another_shippingporfil1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingWithanotherItem1"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/imageView1_shipping_cost_another_shippingporfil1"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignRight="@+id/spinner_des_newshippingprofileshipsfrom1"
+                        android:layout_alignTop="@+id/textView_Newshippingdestination1"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/erase_1" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_frame_newShippingprofille2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_newShippingprofille2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_Newshippingdestination2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/destinations"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner_des_newshippingprofileshipsfrom2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_Newshippingdestination2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView_newshippingShippingcost2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_des_newshippingprofileshipsfrom2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shipingcost"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_shippingporfil2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingShippingcost2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textView_newshippingWithanotherItem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_shipping_cost_shippingporfil2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/wtitem"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_another_shippingporfil2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingWithanotherItem2"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                    
+                    <ImageView
+                        android:id="@+id/imageView1_shipping_cost_another_shippingporfil2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignRight="@+id/spinner_des_newshippingprofileshipsfrom2"
+                        android:layout_alignTop="@+id/textView_Newshippingdestination2"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/erase_1" />
+                </RelativeLayout>
+            </FrameLayout>
+            
+            <FrameLayout
+                android:id="@+id/layout_frame_newShippingprofille3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_newShippingprofille3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_Newshippingdestination3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/destinations"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner_des_newshippingprofileshipsfrom3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_Newshippingdestination3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView_newshippingShippingcost3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_des_newshippingprofileshipsfrom3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shipingcost"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_shippingporfil3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingShippingcost3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textView_newshippingWithanotherItem3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_shipping_cost_shippingporfil3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/wtitem"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_another_shippingporfil3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingWithanotherItem3"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                    
+                    <ImageView
+                        android:id="@+id/imageView1_shipping_cost_another_shippingporfil3"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignRight="@+id/spinner_des_newshippingprofileshipsfrom3"
+                        android:layout_alignTop="@+id/textView_Newshippingdestination3"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/erase_1" />
+                </RelativeLayout>
+            </FrameLayout>
+            
+            <FrameLayout
+                android:id="@+id/layout_frame_newShippingprofille4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_newShippingprofille4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_Newshippingdestination4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/destinations"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner_des_newshippingprofileshipsfrom4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_Newshippingdestination4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView_newshippingShippingcost4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_des_newshippingprofileshipsfrom4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shipingcost"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_shippingporfil4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingShippingcost4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textView_newshippingWithanotherItem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_shipping_cost_shippingporfil4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/wtitem"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_another_shippingporfil4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingWithanotherItem4"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                    
+                    <ImageView
+                        android:id="@+id/imageView1_shipping_cost_another_shippingporfil4"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignRight="@+id/spinner_des_newshippingprofileshipsfrom4"
+                        android:layout_alignTop="@+id/textView_Newshippingdestination4"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/erase_1" />
+                </RelativeLayout>
+            </FrameLayout>
+            
+            
+             <FrameLayout
+                android:id="@+id/layout_frame_newShippingprofille5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/layout_newShippingprofille5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView_Newshippingdestination5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/destinations"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <Spinner
+                        android:id="@+id/spinner_des_newshippingprofileshipsfrom5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_Newshippingdestination5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:id="@+id/textView_newshippingShippingcost5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spinner_des_newshippingprofileshipsfrom5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/shipingcost"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_shippingporfil5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingShippingcost5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/textView_newshippingWithanotherItem5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText_shipping_cost_shippingporfil5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/wtitem"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <EditText
+                        android:id="@+id/editText_shipping_cost_another_shippingporfil5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_newshippingWithanotherItem5"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                    
+                    <ImageView
+                        android:id="@+id/imageView1_shipping_cost_another_shippingporfil5"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_alignRight="@+id/spinner_des_newshippingprofileshipsfrom5"
+                        android:layout_alignTop="@+id/textView_Newshippingdestination5"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/erase_1" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/relativelauy_pop_shiping_all"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+                
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_newshippingAddlocation"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView_newshippingaddlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/addlocation"
+                    android:textColor="#14b6b9"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

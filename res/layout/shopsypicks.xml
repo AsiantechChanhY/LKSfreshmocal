@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/picks_swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000" >
+
+            <RelativeLayout
+                android:id="@+id/picks_nointernet_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="No intenet connection"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/picks_server_error_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <com.shopsy.Utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/serverError_data"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/picks_loading_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/picks_loading_gif"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_centerInParent="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/picks_loading_gif"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/picks_preparing_dummytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data1"
+                        android:textColor="#4f4f4f" />
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/picks_preparing_dummytext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/picks_preparing_dummytext"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data2"
+                        android:textColor="#4f4f4f" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/picks_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#F7F6F2"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/picks_tab_categoties_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/picks_tab_categories_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/picks_label_categories"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.shopsy.Utils.HorizontalListView
+                        android:id="@+id/picks_tab_categories_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/picks_tab_categories_label"
+                        android:layout_marginTop="10dp"
+                        android:divider="#00000000"
+                        android:paddingLeft="10dp"
+                        android:requiresFadingEdge="horizontal"
+                        widget:dividerWidth="8dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/picks_tab_products_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/picks_tab_categoties_layout" >
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:id="@+id/picks_tab_featureshop_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/picks_label_recentproducts"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <com.shopsy.Utils.ExpandableHeightGridView
+                        android:id="@+id/picks_tab_recentproducts_gridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/picks_tab_featureshop_label"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:numColumns="2"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+                    </com.shopsy.Utils.ExpandableHeightGridView>
+
+                    <RelativeLayout
+                         android:id="@+id/picks_tab_recentproducts_viewall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/picks_tab_recentproducts_gridView"
+                        android:layout_centerHorizontal="true" >
+
+                        <com.shopsy.Utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/recommended_label_viewall"
+                            android:textColor="#4BABC5"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <com.shopsy.Utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/picks_tab_recentproducts_viewall"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shopsy.Utils.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stats_spinner_textview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:singleLine="true"
+    android:textColor="#44A8C3"
+    android:gravity="left"
+    android:textSize="14sp"
+    android:typeface="sans" />

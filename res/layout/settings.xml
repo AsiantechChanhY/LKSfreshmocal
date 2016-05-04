@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/settings_account_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#cdcdcd" />
+
+        <ImageView
+            android:id="@+id/settings_account_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/account_icon" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/settings_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/settings_account_icon"
+            android:text="@string/settings_label_account"
+            android:textColor="#4E4E4E"
+            android:textSize="18sp"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_notification_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/settings_account_layout"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#cdcdcd" />
+
+        <ImageView
+            android:id="@+id/settings_notification_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/notification_icon" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/settings_notification_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/settings_notification_icon"
+            android:text="@string/settings_label_notification"
+            android:textColor="#4E4E4E"
+            android:textSize="18sp"
+             />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/settings_advanceSettings_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/settings_notification_layout" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#cdcdcd" />
+
+        <ImageView
+            android:id="@+id/settings_advanceSettings_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/advance_settingsicon" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/settings_advanceSettings_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/settings_advanceSettings_icon"
+            android:text="@string/settings_label_advancesettings"
+            android:textColor="#4E4E4E"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_logout_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/settings_advanceSettings_layout" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#cdcdcd" />
+
+        <ImageView
+            android:id="@+id/settings_logout_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/logout_icon" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/settings_logout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/settings_logout_icon"
+            android:text="@string/settings_label_logout"
+            android:textColor="#4E4E4E"
+            android:textSize="18sp"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

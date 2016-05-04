@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F6F2" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/dialog_holo_light_frame" >
+
+        <com.shopsy.Utils.RoundedImageView
+            android:id="@+id/seeall_review_single_reviewerimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/detailpage_ownername"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher"
+            app:civ_border="true"
+            app:civ_borderColor="#FFFFFFFF"
+            app:civ_borderWidth="2dp"
+            app:civ_selector="true"
+            app:civ_selectorColor="#4403a9f4"
+            app:civ_selectorStrokeColor="#aa5677fc"
+            app:civ_selectorStrokeWidth="2dp"
+            app:civ_shadow="true" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/seeall_review_single_reviewdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/seeall_review_single_reviewerimage"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="#9F9F9F"
+            android:textSize="13sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/seeall_review_single_reviewby_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/seeall_review_single_reviewerimage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/seeall_review_single_reviewerimage"
+            android:text="@string/detail_label_reviewby"
+            android:textColor="#4f4f4f"
+            android:textSize="13sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/seeall_review_single_reviewername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seeall_review_single_reviewby_label"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/seeall_review_single_reviewerimage"
+            android:text=""
+            android:textColor="#1989A0"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/seeall_review_single_ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seeall_review_single_reviewername"
+            android:layout_below="@+id/seeall_review_single_reviewername"
+            android:layout_marginTop="12dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.1" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/seeall_review_single_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seeall_review_single_ratingBar"
+            android:layout_below="@+id/seeall_review_single_ratingBar"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="hyiusyfi iif hih ifhiduf ih ihif hsh iufhdo osdfosfjsofjdoj fojo of odjfosj ofs jof sdjojsojo o"
+            android:textColor="#4f4f4f"
+            android:textSize="14sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/seeall_review_single_comment"
+            android:layout_below="@+id/seeall_review_single_comment"
+            android:layout_marginTop="4dp"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/seeall_review_single_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/seeall_review_single_comment"
+            android:layout_marginTop="14dp"
+            android:background="#cdcdcd" />
+
+        <ImageView
+            android:id="@+id/seeall_review_single_productimage"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/seeall_review_single_comment"
+            android:layout_below="@+id/seeall_review_single_view1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/detailpage_item_relativelayout_background_grey"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image_background" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/seeall_review_single_productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/seeall_review_single_productimage"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/seeall_review_single_productimage"
+            android:text="Nice pro f dfdd df df d fd fd rsdfsfsd f df df"
+            android:textColor="#9F9F9F"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_below="@+id/seeall_review_single_productimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

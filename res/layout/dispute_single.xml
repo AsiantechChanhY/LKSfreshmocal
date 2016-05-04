@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D6E2EE" >
+
+    <RelativeLayout
+        android:id="@+id/dispute_left_side_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#00000000"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/dispute_left_side_sublayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/chat_left_side_background"
+            android:orientation="vertical" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/dispute_left_side_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Prem kumar"
+                android:textColor="#47AB37"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/dispute_left_side_view1"
+                android:layout_width="120dp"
+                android:layout_height="1px"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="1dp"
+                android:background="#f5f5f5" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/dispute_left_side_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:text="hi prem "
+                android:textColor="#141713"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/dispute_left_side_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image_grey"
+                android:visibility="gone" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/dispute_left_side_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/dispute_left_side_message"
+                android:text="14.20 pm"
+                android:textColor="#ABB6C1"
+                android:textSize="12sp" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_alignLeft="@+id/dispute_left_side_time"
+                android:layout_below="@+id/dispute_left_side_time"
+                android:layout_marginTop="1dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/dispute_left_side_sublayout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/white_chat_arrow" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/dispute_right_side_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#00000000"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/dispute_right_side_sublayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/chat_right_side_background"
+            android:orientation="vertical"
+            android:weightSum="1.0" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/dispute_right_side_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:textColor="#141713"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/dispute_right_side_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image_grey"
+                android:visibility="gone" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/dispute_right_side_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:text="12.55 pm"
+                android:textColor="#47AB37"
+                android:textSize="12sp"
+                android:weightSum="1.0" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/dispute_right_side_sublayout"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/green_chat_arrow" />
+    </FrameLayout>
+
+</RelativeLayout>

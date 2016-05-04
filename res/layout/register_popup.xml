@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/register_popup_dummytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/registerpopup_text1"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <View
+            android:id="@+id/register_popup_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/register_popup_dummytext"
+            android:layout_marginTop="10dp"
+            android:background="#7F7D7E" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_popup_view1"
+            android:fillViewport="true" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff" >
+
+                <EditText
+                    android:id="@+id/register_popup_firsteditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/register_popup_view2"
+                    android:background="@drawable/edittext_focused_listener"
+                    android:hint="@string/registerpopup_firstname_hint"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textColor="#4f4f4f"
+                    android:textColorHint="#4f4f4f"
+                    android:textSize="14sp"
+                    android:typeface="sans" >
+                </EditText>
+
+                <View
+                    android:id="@+id/register_popup_view2"
+                    android:layout_width="1px"
+                    android:layout_height="10dp"
+                    
+                    android:layout_centerHorizontal="true"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/register_popup_lasteditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/register_popup_view2"
+                    android:background="@drawable/edittext_focused_listener"
+                    android:hint="@string/registerpopup_lastname_hint"
+                    android:inputType="text"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:paddingLeft="5dp"
+                    android:textColor="#4f4f4f"
+                    android:textColorHint="#4f4f4f"
+                    android:textSize="14sp"
+                    android:typeface="sans" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/register_popup_emaileditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    android:layout_below="@+id/register_popup_firsteditText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_focused_listener"
+                    android:hint="@string/registerpopup_email"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textColor="#4f4f4f"
+                    android:textColorHint="#4f4f4f"
+                    android:textSize="14sp"
+                    android:typeface="sans" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/register_popup_pwdeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    android:layout_below="@+id/register_popup_emaileditText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/register_popup_view3"
+                    android:background="@drawable/edittext_focused_listener"
+                    android:hint="@string/registerpopup_pwd"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textColor="#4f4f4f"
+                    android:textColorHint="#4f4f4f"
+                    android:textSize="14sp"
+                    android:typeface="sans" >
+                </EditText>
+
+                <View
+                    android:id="@+id/register_popup_view3"
+                    android:layout_width="1px"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/register_popup_emaileditText"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/register_popup_confirm_pwdeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    android:layout_below="@+id/register_popup_emaileditText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/register_popup_view3"
+                    android:background="@drawable/edittext_focused_listener"
+                    android:hint="@string/registerpopup_confirm_pwd"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textColor="#4f4f4f"
+                    android:textColorHint="#4f4f4f"
+                    android:textSize="14sp"
+                    android:typeface="sans" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/register_popup_usernameeditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="37dp"
+                    android:layout_below="@+id/register_popup_pwdeditText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_focused_listener"
+                    android:hint="@string/registerpopup_username_hint"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:textColor="#4f4f4f"
+                    android:textColorHint="#4f4f4f"
+                    android:textSize="14sp"
+                    android:typeface="sans" >
+                </EditText>
+
+                <RelativeLayout
+                    android:id="@+id/register_popup_submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/register_popup_usernameeditText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#0D80D0" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/registerpopup_text1"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/register_popup_dummytext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_popup_submit"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/registerpopup_terms_text1"
+                    android:textSize="13sp"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:id="@+id/register_popup_terms_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/register_popup_dummytext2"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00000000" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/registerpopup_terms_text2"
+                        android:textColor="#0D80D0"
+                        android:textSize="13sp"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/register_popup_dummytext3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_popup_dummytext2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/register_popup_terms_layout"
+                    android:text="@string/registerpopup_terms_text3"
+                    android:textSize="13sp"
+                    android:typeface="sans" />
+
+                <RelativeLayout
+                    android:id="@+id/register_popup_policy_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/register_popup_dummytext2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/register_popup_dummytext3"
+                    android:background="#00000000" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/registerpopup_terms_text4"
+                        android:textColor="#0D80D0"
+                        android:textSize="13sp"
+                        android:typeface="sans" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/register_popup_view4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/register_popup_terms_layout"
+                    android:layout_marginTop="10dp"
+                    android:background="#7F7D7E" />
+
+                <RelativeLayout
+                    android:id="@+id/register_popup_signinaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/register_popup_view4"
+                    android:layout_centerHorizontal="true" >
+
+                    <TextView
+                        android:id="@+id/register_popup_accounttext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5dp"
+                        android:text="@string/registerpopup_account"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/register_popup_accounttext1"
+                        android:paddingRight="5dp"
+                        android:text="@string/registerpopup_signin"
+                        android:textColor="#0D80D0"
+                        android:textSize="13sp"
+                        android:typeface="sans" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

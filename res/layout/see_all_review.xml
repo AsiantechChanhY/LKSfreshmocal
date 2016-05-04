@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/seeall_review_swipe_refresh_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2ffffff" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000" >
+
+            <RelativeLayout
+                android:id="@+id/seeall_review_nointernet_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="No intenet connection"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seeall_review_loading_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/seeall_review_loading_gif"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/loadinganim4" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seeall_review_loading_gif"
+                    android:layout_centerHorizontal="true" >
+
+                    <TextView
+                        android:id="@+id/seeall_review_preparing_dummytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data1"
+                        android:textColor="#4f4f4f" />
+
+                    <TextView
+                        android:id="@+id/seeall_review_preparing_dummytext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seeall_review_preparing_dummytext"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/loading_preparing_data2"
+                        android:textColor="#4f4f4f" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seeall_review_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/seeall_review_gridtop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#F2ffffff" >
+
+                    <ImageView
+                        android:id="@+id/seeall_review_gridtop_ownerimage"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/nouserimg" />
+
+                    <TextView
+                        android:id="@+id/seeall_review_gridtop_shopname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/seeall_review_gridtop_ownerimage"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/seeall_review_gridtop_ownerimage"
+                        android:singleLine="true"
+                        android:text="TextView"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <RatingBar
+                        android:id="@+id/seeall_review_gridtop_ratingbar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/seeall_review_gridtop_shopname"
+                        android:layout_below="@+id/seeall_review_gridtop_shopname"
+                        android:layout_marginTop="3dp"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+
+                    <TextView
+                        android:id="@+id/seeall_review_gridtop_totalreviewcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/seeall_review_gridtop_shopname"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@+id/seeall_review_gridtop_ratingbar"
+                        android:text="54 Review"
+                        android:textColor="#4f4f4f"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:id="@+id/seeall_review_gridtop_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#cdcdcd" />
+                </RelativeLayout>
+
+                <com.shopsy.Utils.GridViewWithHeaderAndFooter
+                    android:id="@+id/seeall_review_GridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/seeall_review_gridtop"
+                    android:background="#F7F6F2"
+                    android:numColumns="1"
+                    android:scrollbars="none" >
+                </com.shopsy.Utils.GridViewWithHeaderAndFooter>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

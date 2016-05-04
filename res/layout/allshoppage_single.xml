@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#f1f1f1" >
+
+        <com.shopsy.Utils.RoundedImageView
+            android:id="@+id/allshop_single_userimage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/userprofile" />
+
+        <ImageView
+            android:id="@+id/allshop_single_favourite"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/favtwo"
+            />
+
+        <View
+            android:id="@+id/allshop_single_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/allshop_single_userimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#cdcdcd" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/allshop_single_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allshop_single_view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:typeface="sans"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/allshop_single_itemcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/allshop_single_username"
+            android:layout_marginLeft="3dp"
+            android:text=""
+            android:textColor="#008800"
+            android:textSize="9sp"
+            android:typeface="sans" />
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/allshop_single_viewshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/allshop_single_username"
+            android:layout_marginRight="3dp"
+            android:text="View shop"
+            android:textColor="#008800"
+            android:textSize="9sp"
+            android:typeface="sans" />
+
+        <View
+            android:id="@+id/allshop_single_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/allshop_single_itemcount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

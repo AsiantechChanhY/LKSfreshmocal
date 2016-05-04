@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+	<item
+		android:id="@+id/cart_menu_removeitem"
+		android:title="@string/cart_label_menu_removeitem" />
+		
+	<item
+		android:id="@+id/cart_menu_visitshop"
+		android:title="@string/cart_label_menu_visitshop" />
+		
+		
+</menu>

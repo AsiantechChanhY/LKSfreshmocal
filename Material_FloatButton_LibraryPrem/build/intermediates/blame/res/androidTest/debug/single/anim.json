@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/res/merged/androidTest/debug/anim/fab_scale_down.xml",
+        "source": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/anim/fab_scale_down.xml"
+    },
+    {
+        "merged": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/res/merged/androidTest/debug/anim/fab_scale_up.xml",
+        "source": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/anim/fab_scale_up.xml"
+    },
+    {
+        "merged": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/res/merged/androidTest/debug/anim/fab_slide_out_to_left.xml",
+        "source": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/anim/fab_slide_out_to_left.xml"
+    },
+    {
+        "merged": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/res/merged/androidTest/debug/anim/fab_slide_out_to_right.xml",
+        "source": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/anim/fab_slide_out_to_right.xml"
+    },
+    {
+        "merged": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/res/merged/androidTest/debug/anim/fab_slide_in_from_right.xml",
+        "source": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/anim/fab_slide_in_from_right.xml"
+    },
+    {
+        "merged": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/res/merged/androidTest/debug/anim/fab_slide_in_from_left.xml",
+        "source": "/home/chanhy/Documents/duan/freshmocal-android/freshmocal/Material_FloatButton_LibraryPrem/build/intermediates/bundles/debug/res/anim/fab_slide_in_from_left.xml"
+    }
+]

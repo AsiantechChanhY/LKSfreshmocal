@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.shopsy"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:focusable="false"
+            android:focusableInTouchMode="false" >
+
+            <com.shopsy.StaggeredGridView.DynamicHeightImageView
+                android:id="@+id/subcategories_product_grid_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:background="#efefef"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/subcategories_product_favheart"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/subcategories_product_grid_image"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/favtwo" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subcategories_product_grid_image"
+                android:layout_centerHorizontal="true"
+                android:background="#FFFFFF" >
+
+                <View
+                    android:id="@+id/subcategories_product_single_viewtop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:background="#cdcdcd" />
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/subcategories_product_grid_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/subcategories_product_single_viewtop"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:singleLine="true"
+                    android:text="fdf df df d fdf"
+                    android:textColor="#393939"
+                    android:textSize="12sp"
+                    android:typeface="sans" />
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/subcategories_product_grid_storename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/subcategories_product_grid_name"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toLeftOf="@+id/subcategories_product_grid_price"
+                    android:singleLine="true"
+                    android:text="df dfd fdf "
+                    android:textColor="#8D8d8d"
+                    android:textSize="11sp"
+                    android:typeface="sans" />
+
+                <com.shopsy.Utils.CustomTextView
+                    android:id="@+id/subcategories_product_grid_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/subcategories_product_grid_name"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:text="df dfd df"
+                    android:textColor="#008800"
+                    android:textSize="11sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/subcategories_product_grid_storename"
+                    android:layout_marginTop="3dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

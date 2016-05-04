@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/chat_popup_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/chat_popup_label_title"
+            android:textColor="#ed4747"
+            android:textSize="15sp" />
+        
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/chat_popup_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_popup_title_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="Prem kumar"
+            android:textColor="#ed4747"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/chat_popup_subject_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_popup_title_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_background_border"
+            android:hint="@string/chat_popup_label_subject"
+            android:padding="10dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="14sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/chat_popup_message_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat_popup_subject_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background_border"
+            android:hint="@string/chat_popup_label_message"
+            android:textSize="14sp" >
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/chat_popup_send"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/chat_popup_message_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" >
+
+            <View
+                android:id="@+id/chat_popup_view1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="#cdcdcd" />
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/chat_popup_send_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/chat_popup_label_send"
+                android:textColor="#1A237E"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/chat_popup_progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/chat_popup_send_label"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

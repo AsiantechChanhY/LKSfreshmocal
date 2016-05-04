@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp" >
+
+        <RelativeLayout
+            android:id="@+id/advance_settings_bandwidth_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/advance_settings_label_bandwidth_select"
+                android:textSize="18sp"
+                android:textColor="#575757" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/advance_settings_bandwidth_auto_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/advance_settings_bandwidth_label"
+            android:layout_marginTop="25dp" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/advance_settings_label_bandwidth_auto"
+                android:textSize="16sp"
+                android:textColor="#575757"/>
+
+            <RadioButton
+                android:id="@+id/advance_settings_bandwidth_auto_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:button="@drawable/radiobutton_choice"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/advance_settings_bandwidth_high_layout"
+            android:layout_width="fill_parent"
+             android:layout_height="40dp"
+            android:layout_below="@+id/advance_settings_bandwidth_auto_layout"
+            android:layout_marginTop="22dp" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/advance_settings_label_bandwidth_high"
+                android:textSize="16sp"
+                android:textColor="#575757" />
+
+            <RadioButton
+                android:id="@+id/advance_settings_bandwidth_high_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:button="@drawable/radiobutton_choice"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/advance_settings_bandwidth_low_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/advance_settings_bandwidth_high_layout"
+            android:layout_marginTop="22dp" >
+
+            <com.shopsy.Utils.CustomTextView
+                android:id="@+id/textView1_popup_auto_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/advance_settings_label_bandwidth_low"
+                android:textSize="16sp"
+                android:textColor="#575757" />
+
+            <RadioButton
+                android:id="@+id/advance_settings_bandwidth_low_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:button="@drawable/radiobutton_choice"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <com.shopsy.Utils.CustomTextView
+            android:id="@+id/advance_settings_bandwidth_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/advance_settings_bandwidth_low_layout"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/advance_settings_label_bandwidth_cancel"
+            android:textSize="16sp" 
+            android:textColor="#575757"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/advance_settings_bandwidth_cancel"
+            android:layout_marginRight="25dp"
+            android:text=""/>
+    </RelativeLayout>
+
+</RelativeLayout>

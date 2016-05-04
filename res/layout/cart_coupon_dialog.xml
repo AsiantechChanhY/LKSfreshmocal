@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/cart_coupon_popup_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/cart_label_coupon_insert"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        
+        <EditText
+            android:id="@+id/cart_coupon_popup_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/cart_coupon_popup_text2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:background="@drawable/edittext_background_border"
+            >
+        </EditText>
+        
+        <TextView
+            android:id="@+id/cart_coupon_popup_text_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cart_coupon_popup_edittext"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cart_label_coupon_apply"
+            android:textColor="#ed4747"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cart_coupon_popup_text_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cart_coupon_popup_edittext"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cart_label_coupon_cancel"
+            android:textColor="#ed4747"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/cart_coupon_popup_text_apply"
+            android:layout_marginTop="12dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
