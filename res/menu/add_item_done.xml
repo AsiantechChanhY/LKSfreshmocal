@@ -4,5 +4,5 @@
         android:id="@+id/done_item_menu"
         android:title="DONE"
         android:orderInCategory="100"
-        android:showAsAction="always"/> 
+        android:showAsAction="always" />
 </menu>

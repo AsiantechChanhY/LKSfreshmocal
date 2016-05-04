@@ -242,8 +242,8 @@
     <string name="stats_label_empty_novalue">---</string>
     <string name="stats_label_loading">Please Wait....</string>
 
-    <!-- Order layout -->
-    <string name="order_label_order">Orders</string>
+        <!-- Order layout -->
+        <string name="order_label_order">Orders</string>
 
     <!-- Order Open Tab layout -->
     <string name="order_open_label_empty">No Orders Found</string>
